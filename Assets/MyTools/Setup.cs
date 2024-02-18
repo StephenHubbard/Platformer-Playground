@@ -17,10 +17,10 @@ public static class Setup
    {
       public static void CreateDefault(string root, params string[] folders)
       {
-         var fullpath = Combine(Application.dataPath, root);
+         var fullPath = Combine(Application.dataPath, root);
          foreach (var folder in folders)
          {
-            var path = Combine(fullpath, folder);
+            var path = Combine(fullPath, folder);
             if (!Exists(path))
             {
                CreateDirectory(path);
