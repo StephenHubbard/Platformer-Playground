@@ -6,16 +6,17 @@ namespace MyPlatformer
 {
     public class MyPlayer : MonoBehaviour
     {
-        // Start is called before the first frame update
         void Start()
         {
-        
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
-        
+            if (Input.GetMouseButtonDown(0))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
     }
 }
